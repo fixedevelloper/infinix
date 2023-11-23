@@ -6,7 +6,7 @@
 <section class="banner banner--style2 bg-color-3 bg--cover"
         >
     <video class="background-video" playsinline autoplay muted loop>
-        <source type="video/webm" src="{{asset('video/bg_video.webm')}}">
+        <source type="video/mp4" src="{{asset('video/vid1.mp4')}}">
     </video>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1920 739" class="bg-shape-svg">
         <clipPath id="shape-clippath">

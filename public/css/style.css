@@ -1,6 +1,6 @@
 /*!
 Template Name: Bitrader - Professional Multipurpose HTML Template for Your Crypto, Forex, Stocks & Day Trading Business
-Template URI: 
+Template URI:
 Author: thetork
 Author URI: https: //themeforest.net/user/thetork/portfolio
 Description: Experience the power of Bitrader, the ultimate HTML template designed to transform your trading business. With its sleek design and advanced features, Bitrader empowers you to showcase your expertise, engage clients, and dominate the markets. Elevate your online presence and unlock new trading possibilities with Bitrader.
@@ -4698,6 +4698,7 @@ h6 a {
   background-color: var(--banner2-bg-color);
   padding-block-start: 110px;
   padding-block-end: 50px;
+    clip-path: url(#shape-clippath);
 }
 .banner--style2 .bg-shape-svg {
   width: 0;
@@ -4711,6 +4712,7 @@ h6 a {
 }
 @media (min-width: 576px) {
   .banner--style2 {
+      clip-path: url(#shape-clippath);
     padding-block-end: 40px;
   }
 }
