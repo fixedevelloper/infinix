@@ -29,9 +29,19 @@
                     <div class="header-action">
                         <div class="menu-area">
                             <div class="header-btn">
-                                <a href="{{route('contact_us')}}" class="trk-btn trk-btn--border trk-btn--primary">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Connect
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item active" href="#" onclick="connect()">MetaMask</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" id="connect-button">all wallet</a></li>
+
+                                    </ul>
+                                {{--<a href="#" onclick="connect()" class="trk-btn trk-btn--border trk-btn--primary">
                                     <span>Connect</span>
-                                </a>
+                                </a>--}}
                             </div>
 
                             <!-- toggle icons -->

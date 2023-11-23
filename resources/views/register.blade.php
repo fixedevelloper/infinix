@@ -16,10 +16,11 @@
                 </nav>
             </div>
             <div class="page-header__shape">
-        <span class="page-header__shape-item page-header__shape-item--1"><img src="{{asset('images/header/2.png')}}"
+        <span class="page-header__shape-item page-header__shape-item--1"><img src="{{asset('images/shap2.png')}}"
                                                                               alt="shape-icon"></span>
             </div>
         </div>
     </section>
+    <w3m-core-button></w3m-core-button>
     <!-- ================> Page header end here <================== -->
 @endsection

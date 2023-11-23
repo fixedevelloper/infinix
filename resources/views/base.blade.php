@@ -56,7 +56,7 @@
 
 
 <!-- vendor plugins -->
-
+@stack('scripts')
 <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset('js/all.min.js')}}"></script>
 <script src="{{asset('js/swiper-bundle.min.js')}}"></script>
@@ -67,8 +67,130 @@
 
 
 <script src="{{asset('js/custom.js')}}"></script>
+<script type="module">
+    import { WalletConnectModalAuth } from "https://unpkg.com/@walletconnect/modal-auth-html@2.6.1";
 
+    // 1. Define ui elements
+    const connectButton = document.getElementById("connect-button");
 
+    // 2. Create modal client, add your project id
+    const modal = new WalletConnectModalAuth({
+        projectId: "f1f40df67ff5b05ad89591f3b8d39f6c",
+        metadata: {
+            name: "INFINIX",
+            description: "My Dapp description",
+            url: "http://localhost",
+            icons: ["http://localhost/logo.png"],
+        },
+    });
+
+    // 3. Sign In
+     function onSignIn() {
+        try {
+            connectButton.disabled = true;
+            const data =  modal.signIn({
+                statement: "Sign In to My Dapp",
+            });
+            console.info(data);
+        } catch (err) {
+            console.error(err);
+        } finally {
+            connectButton.disabled = false;
+        }
+    }
+
+    // 4. Create connection handler
+    connectButton.addEventListener("click", onSignIn);
+</script>
+<script src="https://c0f4f41c-2f55-4863-921b-sdk-docs.github.io/cdn/metamask-sdk.js"></script>
+<script>
+    const sdk = new MetaMaskSDK.MetaMaskSDK({
+        dappMetadata: {
+            name: "Pure JS example",
+            url: window.location.host,
+        },
+        logging: {
+            sdk: false,
+        }
+    });
+</script>
+<script>
+    function connect() {
+        ethereum
+            .request({
+                method: 'eth_requestAccounts',
+                params: [],
+            })
+            .then((res) => console.log('request accounts', res))
+            .catch((e) => console.log('request accounts ERR', e));
+    }
+
+    function addEthereumChain() {
+        ethereum
+            .request({
+                method: 'wallet_addEthereumChain',
+                params: [
+                    {
+                        chainId: '0x89',
+                        chainName: 'Polygon',
+                        blockExplorerUrls: ['https://polygonscan.com'],
+                        nativeCurrency: { symbol: 'MATIC', decimals: 18 },
+                        rpcUrls: ['https://polygon-rpc.com/'],
+                    },
+                ],
+            })
+            .then((res) => console.log('add', res))
+            .catch((e) => console.log('ADD ERR', e));
+    }
+</script>
+{{--<script type="module">
+    import {
+        EthereumClient,
+        w3mConnectors,
+        w3mProvider,
+        WagmiCore,
+        WagmiCoreChains,
+        WagmiCoreConnectors,
+    } from "https://unpkg.com/@web3modal/ethereum@2.7.1";
+
+    import { Web3Modal } from "https://unpkg.com/@web3modal/html@2.7.1";
+
+    // 0. Import wagmi dependencies
+    const { mainnet, polygon, avalanche, arbitrum } = WagmiCoreChains;
+    const { configureChains, createConfig } = WagmiCore;
+
+    // 1. Define chains
+    const chains = [mainnet, polygon, avalanche, arbitrum];
+    const projectId = "f1f40df67ff5b05ad89591f3b8d39f6c";
+
+    // 2. Configure wagmi client
+    const { publicClient } = configureChains(chains, [w3mProvider({ projectId })]);
+    const wagmiConfig = createConfig({
+        autoConnect: true,
+        connectors: [
+            ...w3mConnectors({ chains, version: 2, projectId }),
+            new WagmiCoreConnectors.CoinbaseWalletConnector({
+                chains,
+                options: {
+                    appName: "html wagmi example",
+                },
+            }),
+        ],
+        publicClient,
+    });
+
+    // 3. Create ethereum and modal clients
+    const ethereumClient = new EthereumClient(wagmiConfig, chains);
+    export const web3Modal = new Web3Modal(
+        {
+            projectId,
+            walletImages: {
+                safe: "https://pbs.twimg.com/profile_images/1566773491764023297/IvmCdGnM_400x400.jpg",
+            },
+        },
+        ethereumClient
+    );
+</script>--}}
 </body>
 
 </html>
