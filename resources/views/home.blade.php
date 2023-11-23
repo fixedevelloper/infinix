@@ -5,9 +5,7 @@
 <!-- ===============>> Banner section start here <<================= -->
 <section class="banner banner--style2 bg-color-3 bg--cover"
         >
-    <video class="background-video" playsinline autoplay muted loop>
-        <source type="video/mp4" src="{{asset('video/vid1.mp4')}}">
-    </video>
+
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1920 739" class="bg-shape-svg">
         <clipPath id="shape-clippath">
             <path
@@ -16,6 +14,9 @@
     </svg>
 
     <div class="container">
+        <video class="background-video" playsinline autoplay muted loop>
+            <source type="video/mp4" src="{{asset('video/vd2.mp4')}}">
+        </video>
         <div class="banner__wrapper banner__wrapper--style2">
             <div class="row flex-md-row-reverse gx-5">
                 <div class="col-lg-6 col-md-7">
