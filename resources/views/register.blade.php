@@ -25,7 +25,8 @@
     <section class="account padding-top padding-bottom sec-bg-color2">
         <div class="container">
             <div class="account__wrapper" data-aos="fade-up" data-aos-duration="800">
-                <div class="row g-4">
+                <img src="{{asset('images/Black White Minimal Coming Soon Instagram Post.svg')}}">
+                {{--<div class="row g-4">
                     <div class="col-lg-6">
                         <div class="account__content account__content--style1">
 
@@ -68,7 +69,7 @@
 
                         </div>
                     </div>
-                </div>
+                </div>--}}
             </div>
         </div>
         <div class="account__shape">

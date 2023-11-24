@@ -12,7 +12,7 @@
                     <div class="menu-area">
                         <ul class="menu menu--style2">
                             <li>
-                                <a href="{{route('home')}}">Home</a>
+                                <a href="{{route('home')}}">HOME</a>
                             </li>
                             <li>
                                 <a href="{{route('register')}}">REGISTRATION</a>
@@ -29,7 +29,7 @@
                     <div class="header-action">
                         <div class="menu-area">
                             <div class="header-btn">
-                                <div class="dropdown">
+                                {{--<div class="dropdown">
                                     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Connect
                                     </button>
@@ -39,10 +39,10 @@
                                         <li><a class="dropdown-item" id="connect-button">all wallet</a></li>
 
                                     </ul>
-                                </div>
-                                {{--<a href="#" onclick="connect()" class="trk-btn trk-btn--border trk-btn--primary">
+                                </div>--}}
+                                <a href="#" onclick="connect()" class="trk-btn trk-btn--border trk-btn--primary">
                                     <span>Connect</span>
-                                </a>--}}
+                                </a>
                             </div>
 
                             <!-- toggle icons -->
