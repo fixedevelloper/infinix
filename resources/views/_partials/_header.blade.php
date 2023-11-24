@@ -39,6 +39,7 @@
                                         <li><a class="dropdown-item" id="connect-button">all wallet</a></li>
 
                                     </ul>
+                                </div>
                                 {{--<a href="#" onclick="connect()" class="trk-btn trk-btn--border trk-btn--primary">
                                     <span>Connect</span>
                                 </a>--}}

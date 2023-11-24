@@ -21,4 +21,38 @@
         </div>
     </section>
     <!-- ================> Page header end here <================== -->
+    <!-- ===============>> account start here <<================= -->
+    <section class="account padding-top padding-bottom sec-bg-color2">
+        <div class="container">
+            <div class="account__wrapper" data-aos="fade-up" data-aos-duration="800">
+                <div class="row g-4">
+                    <div class="col-lg-12">
+                        <div class="account__content account__content--style1">
+
+                            <!-- account tittle -->
+                            <div class="account__header">
+                                <h2>INFINIX FORCE</h2>
+                                <p>Open or Download documentation PDF</p>
+                            </div>
+
+
+                            <!-- account form -->
+
+
+                                <a target="_blank" href="{{asset('pdf/INFINIX FORCE ENG PDF_20231114_205824_0000.pdf')}}" class="trk-btn trk-btn--border trk-btn--primary d-block mt-4">Open</a>
+                            <a download href="{{asset('pdf/INFINIX FORCE ENG PDF_20231114_205824_0000.pdf')}}" class="trk-btn trk-btn--border trk-btn--outline2 d-block mt-4">Download</a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="account__shape">
+      <span class="account__shape-item account__shape-item--1"><img src="{{asset('images/contact_shap04.png')}}"
+                                                                    alt="shape-icon"></span>
+        </div>
+    </section>
+    <!-- ===============>> account end here <<================= -->
+
 @endsection
