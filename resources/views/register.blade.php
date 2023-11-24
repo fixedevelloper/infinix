@@ -26,6 +26,7 @@
         <div class="container">
             <div class="account__wrapper" data-aos="fade-up" data-aos-duration="800">
                 <img src="{{asset('images/Black White Minimal Coming Soon Instagram Post.svg')}}">
+                <h2 CLASS="text-center">COMING SOON</h2>
                 {{--<div class="row g-4">
                     <div class="col-lg-6">
                         <div class="account__content account__content--style1">
