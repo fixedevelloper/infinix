@@ -32,17 +32,23 @@
                             <div class="account__header">
                                 <h2>Registration In</h2>
                                 <p>INFINIX FORCE</p>
-                                <div>
+                                <div class="row">
+                                <div class="">
                                     <label for="account-email" class="form-label">Your upline</label>
-                                    <input type="text" class="form-control" id="account-email" placeholder="001"
-                                           required>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" id="account-email" placeholder="001"
+                                               required>
+                                        <a  href="#" class="input-group-text trk-btn trk-btn--border trk-btn--primary">Save</a>
+                                    </div>
+
+                                </div>
                                 </div>
                                 <div class="mt-5">
                                     <ul class="list-group">
                                         <li class="list-group-item list-group-item-danger">Wallet not connected</li>
                                         <li class="list-group-item list-group-item-danger">Network</li>
                                         <li class="list-group-item list-group-item-success">Registration Available</li>
-                                        <li class="list-group-item list-group-item-danger">Balance is less than 5 USDT and 0.004 BNB</li>
+                                        <li class="list-group-item list-group-item-danger">Balance is less than 10 USDT and 0.004 BNB</li>
                                         <li class="list-group-item list-group-item-danger">Approve USDT</li>
                                     </ul>
                                 </div>
