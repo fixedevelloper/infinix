@@ -21,7 +21,7 @@
                                 <a href="{{route('documentation')}}">DOCUMENTATION</a>
                             </li>
                             <li>
-                                <a href="{{route('about_us')}}">ABOUT US</a>
+                                <a href="#">ABOUT US</a>
                             </li>
                         </ul>
 
