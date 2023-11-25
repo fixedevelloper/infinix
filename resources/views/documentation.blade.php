@@ -34,11 +34,6 @@
                                 <h2>INFINIX FORCE</h2>
                                 <p>Open or Download documentation PDF</p>
                             </div>
-
-
-                            <!-- account form -->
-
-
                                 <a target="_blank" href="{{asset('pdf/INFINIX FORCE ENG PDF_20231114_205824_0000.pdf')}}" class="trk-btn trk-btn--border trk-btn--primary d-block mt-4"><i class="fa fa-file-pdf"></i>Open</a>
                             <a download href="{{asset('pdf/INFINIX FORCE ENG PDF_20231114_205824_0000.pdf')}}" class="trk-btn trk-btn--border trk-btn--outline2 d-block mt-4"><i class="fa fa-download"></i> Download</a>
 

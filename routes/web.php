@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\FrontController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,3 +25,17 @@ Route::get('/registration', [FrontController::class, 'register'])
     ->name('register');
 Route::get('/contact_us', [FrontController::class, 'contact_us'])
     ->name('contact_us');
+Route::get('/welcome', [FrontController::class, 'welcome'])
+    ->name('welcome');
+Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
+    Route::get('/dashboard', [AdminController::class, 'dashboard'])
+        ->name('dashboard');
+    Route::get('/partners', [AdminController::class, 'partners'])
+        ->name('partners');
+    Route::get('/links', [AdminController::class, 'links'])
+        ->name('links');
+    Route::get('/statitics', [AdminController::class, 'statitics'])
+        ->name('statitics');
+});
+Route::get('/preview', [AdminController::class, 'preview'])
+    ->name('preview');

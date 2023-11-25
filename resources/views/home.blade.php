@@ -134,7 +134,7 @@
                     <div class="about__thumb about__thumb--style2" data-aos="fade-left" data-aos-duration="800">
                         <div class="about__thumb-inner mt-30 mt-lg-0">
                             <div class="about__thumb-image  text-center">
-                                <img src="{{asset('images/home1.svg')}}" alt="about-image" class="dark">
+                                <img src="{{asset('images/about_img_dark02.png')}}" alt="about-image" class="dark">
                             </div>
                         </div>
                     </div>
