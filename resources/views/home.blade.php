@@ -58,7 +58,7 @@
                 </div>
                 <div class="col-lg-6 col-md-5">
                     <div class="banner__thumb">
-                        <img src="{{asset('images/banner02.png')}}" alt="banner-thumb">
+                        <img src="{{asset('images/home_header.svg')}}" alt="banner-thumb">
                     </div>
                 </div>
 
@@ -134,7 +134,7 @@
                     <div class="about__thumb about__thumb--style2" data-aos="fade-left" data-aos-duration="800">
                         <div class="about__thumb-inner mt-30 mt-lg-0">
                             <div class="about__thumb-image  text-center">
-                                <img src="{{asset('images/about_img_dark02.png')}}" alt="about-image" class="dark">
+                                <img src="{{asset('images/home1.svg')}}" alt="about-image" class="dark">
                             </div>
                         </div>
                     </div>
