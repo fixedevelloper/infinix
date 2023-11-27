@@ -12,7 +12,7 @@
                     <div class="card_body">
                         <div>
                             <span class="h3 text-start">L{{$i}}</span>
-                            <span class="h3" style="float: right">40</span>
+                            <span class="h3" style="float: right"><i class="text-warning mdi mdi-circle"></i>40</span>
                         </div>
                         <div>
 
