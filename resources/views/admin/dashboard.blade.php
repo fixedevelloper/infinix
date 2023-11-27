@@ -91,5 +91,44 @@
     </div>
 
 </div>
+    <div class="row">
+        <h3>Forcage Programs</h3>
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <span class="col-md-6 text-start h1">X3</span><span class="col-md-6 h1 text-end">10USD</span>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div class="row">
+                                @for($i=0; $i<11;$i++)
+                                  <div class="col-md-2 col-sm-4 col-6 col-xl-3 grid-margin stretch-card">
+                                        <div class="card">
+                                            <div class="card_body_program">
+                                                <img class="wd-50 ht-50 rounded-circle" src="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endfor
+                            </div>
 
+                        </div>
+                        <div class="col-md-6">
+                            <div class="">
+                                <span class="d-block text-end">Missed Profits</span>
+                                <span class="d-block text-end">400USD</span>
+                            </div>
+                            <div class="d-grid gap-2 align-self-end mt-5">
+                                <a href="{{route('preview')}}" class="d-block btn btn-outline-success align-self-end">Preview</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

@@ -25,13 +25,13 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/images/og.png">
 
-
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('admin/vendors/core/core.css')}}">
     <link rel="stylesheet" href="{{asset('admin/vendors/mdi/css/materialdesignicons.min.css')}}">
     <link rel="stylesheet" href="{{asset('admin/vendors/flag-icon-css/css/flag-icon.min.css')}}">
     <!-- main css for template -->
     <link rel="stylesheet" href="{{asset('admin/css/style.min.css')}}">
-    <link rel="stylesheet" href="{{asset('admin/css/custom.css')}}">
+    <link rel="stylesheet" href="{{asset('admin/css/custom_admin.css')}}">
 </head>
 
 <body>

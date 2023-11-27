@@ -1,0 +1,22 @@
+.text-center{
+    text-align:center!important}
+.d-flex{display:flex!important}
+.flex-row{flex-direction:row!important}
+.point-program{
+    width: 20%;
+    border: 1px solid #172340;
+    border-radius: .25rem;
+}
+.card_body_program{
+    padding: 1px;
+    text-align: center;
+    background-color: gray;
+}
+.card_body_program_active{
+    padding: 1px;
+    text-align: center;
+    background-color: #0A4FD5;
+}
+@media (min-width: 1200px) {
+
+}
