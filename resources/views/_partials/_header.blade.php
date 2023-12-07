@@ -8,6 +8,22 @@
                         <img src="{{asset('images/logo.svg')}}" alt="logo">
                     </a>
                 </div>
+                {{--<div class="fw-bold">
+                   <span class="btn btn-sm btn-outline-danger">
+                       <span id="p_day"></span></br>
+                       Days
+                   </span>
+                    <span class="btn btn-sm btn-outline-danger">
+                    <span id="p_hour"></span></br>Hours
+                    </span>
+                    <span class="btn btn-sm btn-outline-danger">
+                    <span id="p_min"></span></br> Min
+                    </span>
+                    <span class="btn btn-sm btn-outline-danger">
+                    <span id="p_sec"></span></br>
+                        Sec
+                    </span>
+                </div>--}}
                 <div class="header-content d-flex align-items-center gap-4">
                     <div class="menu-area">
                         <ul class="menu menu--style2">

@@ -53,7 +53,28 @@
 
 
 
-
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Subscribe our Newsletter</h5>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Subscribe to our mailing list to get the latest updates straight in your inbox.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email Address">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- vendor plugins -->
 @stack('scripts')
@@ -64,10 +85,18 @@
 <script src="{{asset('js/fslightbox.js')}}"></script>
 <script src="{{asset('js/purecounter_vanilla.js')}}"></script>
 
-
-
 <script src="{{asset('js/custom.js')}}"></script>
-<script type="module">
+<script>
+    $(document).ready(function(){
+        var myModal = document.getElementById('myModal')
+        myModal.addEventListener('shown.bs.modal', function () {
+            //myInput.focus()
+        })
+       // document.getElementById("myModal").modal('show');
+    });
+</script>
+
+{{--<script type="module">
     import { WalletConnectModalAuth } from "https://unpkg.com/@walletconnect/modal-auth-html@2.6.1";
 
     // 1. Define ui elements
@@ -142,7 +171,7 @@
             .then((res) => console.log('add', res))
             .catch((e) => console.log('ADD ERR', e));
     }
-</script>
+</script>--}}
 {{--<script type="module">
     import {
         EthereumClient,

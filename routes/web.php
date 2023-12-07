@@ -27,6 +27,8 @@ Route::get('/contact_us', [FrontController::class, 'contact_us'])
     ->name('contact_us');
 Route::get('/welcome', [FrontController::class, 'welcome'])
     ->name('welcome');
+Route::get('/login', [AdminController::class, 'login'])
+    ->name('login');
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::get('/dashboard', [AdminController::class, 'dashboard'])
         ->name('dashboard');
